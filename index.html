@@ -6,10 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Validation</title>
+  <script defer src="app.js"></script>
+  <!-- defer oznacza załaduj po body -->
 </head>
 
 <body>
-
+  <div id="error"></div>
+  <form action="/" method="get" id="form">
+    <div>
+      <label for="name">Name</label>
+      <input type="name" id="name" name="name">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 
 </html>
